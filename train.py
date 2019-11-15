@@ -57,6 +57,8 @@ if args.dataset == 'VCTK':
     dataset = VCTK(**dataset_args)
 elif args.dataset == 'LibriSpeech':
     dataset = LibriSpeech(**dataset_args)
+elif args.dataset == 'Project':
+    dataset = Project(**dataset_args)
 num_batches = dataset.num_batches
 
 with open(args.parameter_path) as file:

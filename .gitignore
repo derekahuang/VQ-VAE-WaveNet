@@ -1,0 +1,5 @@
+data/VCTK-Corpus.tar.gz
+data/VCTK-Corpus/
+data/project_data/
+saved_model/
+logs/

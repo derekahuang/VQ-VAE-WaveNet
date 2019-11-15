@@ -132,3 +132,14 @@ class VCTK(Dataset):
         self.split_func = lambda s: s.split('/')[0]
         self.make_iterator(relative_path, in_memory, max_len, sr, batch_size, depth=109)
 
+class Project(Dataset):
+    def __init__(self, batch_size=1, in_memory=True, max_len=5120, sr=16000, 
+        relative_path=''):
+        super(Project, self).__init__()
+
+        self.filename = 'ibm_train.txt'
+        self.speaker_file = 'ibm_speakers.txt'
+        self.data_dir = 'project_data/wav/'
+        self.split_func = lambda s: s.split('/')[0]
+        self.make_iterator(relative_path, in_memory, max_len, sr, batch_size, depth=10)
+

@@ -1,0 +1,10 @@
+AM, 0
+DJ, 1
+DZ, 2
+EH, 3
+HE, 4
+JL, 5
+SF, 6
+SN, 7
+TL, 8
+YB, 9

@@ -86,6 +86,7 @@ def get_speaker_to_int(speaker_path):
 
 
 def get_speaker_info(speaker_to_int, info_path):
+    print("thi sis the speaker info")
     with open(info_path) as file:
         lines = file.readlines()
     speaker_info = {}
@@ -95,6 +96,7 @@ def get_speaker_info(speaker_to_int, info_path):
     for speaker_int in speaker_to_int.values():
         if speaker_int not in speaker_info:
             speaker_info[speaker_int] = 'missing_info'
+    print(speaker_info)
     return speaker_info
 
 
